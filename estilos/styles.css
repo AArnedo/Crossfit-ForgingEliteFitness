@@ -5,7 +5,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+
+
+/*Main*/
+
 .section-main{
     background: url(/img/background-main.jpg);
     width: 100%;
@@ -15,22 +21,22 @@
 }
 .nav-container{
     display: flex;
-    width: 100vw;
+    width: 100%;
+    height: 100px;
     align-items: center;
     justify-content:space-between;
     background-color: rgba(0, 0, 0, 0.76);
 }
 .logo-nav img{
     border-radius: 20px;
-    width: 100px;
-    height: 80px;
+    width: 130px;
+    height: 100px;
     margin: 10px 0 10px 120px;
 }
 .enlaces-nav a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
     margin-right: 60px;
     font-size: 22px;
 }
@@ -38,33 +44,35 @@
     color: #B70404;
 }
 .hero-container{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 30%;
     margin-top: 130px;
-    padding-left: 100px;
 }
 .txt-1 h1{
+    width: 90%;
     color: #b70404;
-    font-size: 85px;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-size: 72px;
     margin-bottom: 5px;
+    margin-left: 100px;
 }
 .txt-1 p{
-    font-family:'Raleway', sans-serif;
-    font-style: italic;
     font-size: 23px;
     color: white;
-    padding: 25px;
-    width: 75%;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 80%;
 }
 .btn-1{
-    padding: 20px 0 20px 50px;
-    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-1 button{
     font-size: 25px;
     padding: 15px;
+    margin-top: 50px;
     border: solid 2px white;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.76);
@@ -73,9 +81,119 @@
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
     font-size: 25px;
 }
 .btn-1 button:hover{
     background-color: #b70404af;
+}
+
+
+
+/*Servicios*/
+
+.section-service{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(150, 150, 150);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-service h1{
+    font-size: 50px;
+    margin: 30px 0;
+}
+.container-service{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    margin: 40 20px;
+}
+.serv1{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/serv1-crosstraining.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin:20px 20px;
+    border: 5px black solid;
+    border-radius: 10px;
+}
+.serv1:hover{
+    background: #000000;
+    border: 10px #B70404 solid;
+    border-radius: 20px;
+}
+.serv2{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/serv2-funcional.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:20px 20px;
+    border: 5px black solid;
+    border-radius: 10px;
+}
+.serv2:hover{
+    background: #000000;
+    border: 10px #B70404 solid;
+    border-radius: 20px;
+}
+.serv3{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/serv3-levantamiento.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:20px 20px;
+    border: 5px black solid;
+    border-radius: 10px;
+}
+.serv3:hover{
+    background: #000000;
+    border: 10px #B70404 solid;
+    border-radius: 20px;
+}
+.serv4{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/serv4-jumping.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:20px 20px;
+    border: 5px black solid;
+    border-radius: 10px;
+}
+.serv4:hover{
+    background: #000000;
+    border: 10px #B70404 solid;
+    border-radius: 20px;
+}
+.container-service h4{
+    color: aliceblue;
+    -webkit-text-stroke: 1px black;
+    font-size: 45px;
+}
+.container-service p{
+    width: 70%;
+    color: #B70404;
+    background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 15px;
+    padding: 10px;
+    -webkit-text-stroke: 1px black;
+    font-size: 20px;
 }
