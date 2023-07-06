@@ -279,10 +279,11 @@
 .container-galeria{
     width: 100%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
     flex-wrap: wrap;
+    padding-left: 3em;
     background-color:rgb(150, 150, 150);
 }
 .txt-galeria{
@@ -294,7 +295,8 @@
     width: 25em;
     height: 20em;
     margin: 1em;
-    border: #000000 .3em solid;
+    border: #000000 .2em solid;
+    border-radius: 1em;
 }
 .btn-comeback{
     font-size: 2em;
