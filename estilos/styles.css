@@ -86,6 +86,7 @@
 }
 
 /*Quienes Somos*/
+
 .container-quienes-somos{
     width: 100%;
     display: flex;
@@ -109,9 +110,6 @@
     width: 30em;
     height: 20em;
 }
-
-
-
 
 /*Servicios*/
 
