@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/styles.css">
-    <title>CrossFit | BlackBox</title>
+    <title>CrossFit | ForgingEliteFitness</title>
 </head>
 <body>
+
     <!--Seccion Main-->
-    <section class="section-main">
+
+    <section class="section-header">
         <nav class="nav-container">
             <div class="logo-nav">
                <a href="index.html"><img src="./img/logo.png" alt=""></a>
             </div>
             <div class="enlaces-nav">
                 <a href="index.html">Inicio</a>
-                <a href="#">Servicios</a>
-                <a href="#">Galeria</a>
-                <a href="#">Contactanos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="./pages/Galeria.html" target="_blank">Galeria</a>
+                <a href="#contacto">Contactanos</a>
             </div>
         </nav>
         <div class="hero-container">
@@ -26,11 +28,26 @@
                 <p>"El CrossFit no se trata solo de estar en forma, sino de ser más fuerte, más rápido y más resistente en todos los aspectos de la vida".</p>
             </div>
             <div class="btn-1">
-                <button><a href="./pages/Reserva.html">¡Conoce quienes somos!</a></button>
+                <button><a href="#quienessomos">¡Conoce quienes somos!</a></button>
             </div>
         </div>
     </section>
-    <section class="section-service">  
+
+    <!--Seccion Quienes Somos-->
+
+    <section class="container-quienes-somos" id="quienessomos">
+        <h2>¡Bienvenidos a nuestra página de CrossFit!</h2>
+        <p>Estamos emocionados de darles la bienvenida a este espacio dedicado a una de las disciplinas más desafiantes y apasionantes del mundo del fitness: ¡el CrossFit! Aquí encontrarán todo lo que necesitan para sumergirse en este entrenamiento funcional de alta intensidad que ha conquistado a atletas de todos los niveles alrededor del mundo. 
+        <br><br>
+        Nuestra página ha sido diseñada con el objetivo de brindarles información, recursos y motivación para que puedan aprovechar al máximo su experiencia en el CrossFit. Ya sean principiantes que buscan iniciarse en esta disciplina o atletas experimentados en busca de nuevos retos, tenemos algo para todos.
+        <br><br>
+        También compartiremos noticias, eventos y competencias relacionadas con el mundo del CrossFit, para que se mantengan actualizados sobre lo que está sucediendo en la comunidad. Podrán descubrir historias inspiradoras de atletas destacados, aprender de sus experiencias y compartir sus propias historias de éxito.</p>
+        <img src="./img/quienessomos.jpg" alt="">
+    </section>
+
+    <!--Seccion Service-->
+
+    <section class="section-service" id="servicios">  
         <h1>SERVICIOS DISPONIBLES</h1>
         <div class="container-service">
             <div class="serv1">
@@ -52,6 +69,25 @@
         </div>
     </section>
 
+    <!--Seccion Contacto-->
+
+    <section class="container-contact" id="contacto">
+        <div class="container-map">
+            <h2>¡Encontranos en tu Ciudad!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55607.980138949104!2d-66.89697675059782!3d-29.414215844862955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427d9873396f7e5%3A0x3e1c9c348972c7ca!2sLa%20Rioja%2C%20La%20Rioja%20Province!5e0!3m2!1sen!2sar!4v1688676321504!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container-form">
+            <h2>Formulario de Contacto</h2>
+            <form class="form">
+                <input class="controls" type="text" placeholder="Ingrese su Nombre" name="nombre">
+                <input class="controls" type="text" placeholder="Ingrese su Apellido" name="apellido">
+                <input class="controls" type="email" placeholder="Ingrese su Email" name="email">
+                <input class="controls" type="number" placeholder="Ingrese su Número" name="numero">
+                <textarea name="textarea" cols="30" rows="10"></textarea>
+                <input class="btn-form" type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
 
 </body>
 </html>
